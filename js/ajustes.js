@@ -38,4 +38,5 @@ document.addEventListener ("DOMContentLoaded", function () {
     })
     saveButton.addEventListener("click", function () {
         alert("Configuración guardada.");
-    });    
+    });  
+});
