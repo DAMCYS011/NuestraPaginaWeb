@@ -65,11 +65,6 @@ input:checked + .slider:before {
     background: white;
     border: 2px solid black;
 }
-#savesenttings {
-    background-color: #4cd964;
-    border-radius: 30px;
-    font-weight: bold;
-}
 body.darkMode {
     background-color: #1e1e2f;
     color: white;
@@ -77,3 +72,46 @@ body.darkMode {
 body.darkMode .settings {
     background-color: #2c2c3e;
 }
+.settings-item input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 60px;
+    height: 30px;
+    background-color: #1e1e2f;
+    border-radius: 30px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.settings-item input[type="checkbox"]::before {
+    content: "Off";
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 12px;
+    color: #1e1e2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.settings-item input[type="checkbox"]:checked {
+    background-color: #8a2be2;
+}
+.settings-item input[type="checkbox"]:checked::before {
+    content: "On";
+    transform: translateX(30px);
+    background-color: #1e1e2f;
+    color: #8a2be2;
+}
+#savesenttings {
+    background-color: #4cd964;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
