@@ -20,7 +20,7 @@ document.addEventListener ("DOMContentLoaded", function () {
     }
     darkModeToggle.addEventListener("change", function () {
         if (darkModeToggle.checked) {
-            document.body.classList.add("darkMode");
+            document.body.classList.add("dark-mode");
             localStorage.setItem("darkMode", "true");
         } else {
             document.body.classList.remove("dark-mode");
