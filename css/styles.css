@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --clr-main: #060218;
+    --clr-main-light: #810281;
+    --clr-blue: #050797;
+    --clr-gray: #e2e2e2;
+    --clr-green: #2ee908;
+    --clr-red: #961818;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: var(--clr-gray);
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.niupi-header {
+    max-width: 1100px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-main);
+}
+
+.niupi-header div,
+.niupi-header ul {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.niupi-header img {
+    width: 70px;
+
+}
+
+.niupi-header h1,
+.niupi-header a {
+    color: var(--clr-gray);
+    margin: 20px;
+}
+
+.main-container {
+    text-align: center;
+}
+
+.main-container img {
+    border-radius: 20px;
+}
+
+.main-div {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.main-div div {
+    max-width: 500px;
+    margin: 30px;
+}
+
+.main-div p {
+    text-align: justify;
+}
+
+.main-div button {
+    background-color: var(--clr-main-light);
+    border: var(--clr-main-light);
+    border-radius: 20px;
+    width: 150px;
+    height: 60px;
+    margin: 25px;
+    color: var(--clr-gray);
+    font-size: 15px;
+    padding: 8px;
+    font-weight: 600;
+}
+
+.main-div img {
+    width: 300px;
+}
+
+.footer {
+    padding: 80px;
+}
+  
+.footer-txt {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+  
+.footer-txt h3 {
+    font-size: 20px;
+    color: var(--clr-main);
+    margin-bottom: 20px;
+}
+  
+.footer-txt li {
+    font-size: 16px;
+    color: var(--clr-main);
+    margin-bottom: 10px;
+}
+  
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+  
+.social-imgs img {
+    margin-right: 25px;
+}
+  
+.social-txt {
+    display: flex;
+}
+  
+.social-txt p {
+    font-size: 15px;
+    color: var(--clr-main);
+    margin-right: 15px;
+}
+
+.feet {
+    background-color: var(--clr-main);
+    width: 100%;
+}
+  
+.rights {
+    font-size: 18px;
+    text-align: center;
+    color: var(--clr-gray);
+    padding: 30px 10px;
+}
