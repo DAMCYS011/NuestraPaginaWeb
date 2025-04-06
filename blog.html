@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Nutrición Inteligente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff6600;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .articles {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        article {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background: #fff;
+            transition: transform 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        .btn {
+            background: #ff6600;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff4500;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .carousel {
+            overflow: hidden;
+            width: 80%;
+            margin: auto;
+        }
+
+        .carousel-container {
+            display: flex;
+            animation: slide 10s infinite alternate;
+        }
+
+        .carousel-container img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog: Nutrición Inteligente</h1>
+    </header>
+
+    <section class="carousel">
+        <div class="carousel-container">
+            <img src="frutas.jpg" alt="Frutas saludables">
+            <img src="verduras.jpg" alt="Verduras frescas">
+            <img src="ensalada.jpg" alt="Plato saludable">
+        </div>
+    </section>
+
+    <section class="articles">
+        <article class="fade-in">
+            <h2>Beneficios de las Frutas</h2>
+            <img src="frutas.jpg" alt="Frutas saludables">
+            <p>Las frutas aportan vitaminas y minerales esenciales para el organismo...</p>
+            <button class="btn">Leer más</button>
+        </article>
+        <article class="fade-in">
+            <h2>Cómo incluir más verduras en tu dieta</h2>
+            <img src="verduras.jpg" alt="Verduras frescas">
+            <p>Descubre consejos prácticos para incorporar más verduras en tu alimentación...</p>
+            <button class="btn">Leer más</button>
+        </article>
+    </section>
+
+    <footer>
+        <p> © NIUPI 2025 - Blog sobre alimentación saludable</p>
+    </footer>
+</body>
+</html>
