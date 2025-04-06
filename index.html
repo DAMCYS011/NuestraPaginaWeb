@@ -1,103 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Niupi Tips</title>
-        <link rel="stylesheet" href="css/styles.css" />
-        <script defer src="js/script.js"></script>
-    </head>
-    <body>
-        <header class="container niupi-header">
-            <div>
-                <img src="assets/logo.svg" alt="Logo">
-                <h1>Niupi Tips</h1>
-            </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Listas</a></li>
-                        <li><a href="">Detalles</a></li>
-                        <li><a href="ajustes.html">Ajustes</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main class="container main-container">
-            <div>
-                <img src="assets/fruits.png" alt="Fruits">
-                <h3>¡La importancia de las frutas y verduras para tu salud!</h3>
-            </div>
-            <div class="main-div">
-                <div>
-                    <p>Las frutas y verduras son imprescindibles para una buena salud, inclúyelas en tu alimentación para cubrir los requerimientos nutricionales.</p>
-                    <p>
-                        Estos alimentos son esenciales en la prevención de muchas y extendidas enfermedades crónicas tales como la obesidad, muy especialmente entre la población infantil. Además de ayudar a mantener el peso ideal, consumir 5 raciones entre frutas y verduras supone un refuerzo para prevenir la diabetes, el cáncer y las enfermedades cardiovasculares.
-                    </p>
-                    <button>
-                        Conoce nuestra lista de recetas
-                    </button>
-                </div>
-                <div>
-                    <img src="assets/family.png" alt="Family">
-                </div>
-            </div>
-        </main>
-            <h2>Descubre consejos saludables en nuestro blog</h2>
-        <p>Encuentra artículos sobre nutrición, bienestar y recetas saludables.</p>
-        <a href="blog.html" class="btn-blog">Visitar Blog</a>
-    </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niupi Tips</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="container niupi-header">
+    <div>
+      <img src="assets/logo.svg" alt="Logo">
+      <h1>Niupi Tips</h1>
+    </div>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Listas</a></li>
+          <li><a href="">Detalles</a></li>
+          <li><a href="ajustes.html">Ajustes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <footer class="footer container">
-        <div class="footer-txt">
-        <footer class="footer container">
-            <div class="footer-txt">
-            
-              <div>
-                <h3>Niupi Tips</h3>
-                <p>Naturalmente saludable</p>
-              </div>
-              <div>
-                <h3>Servicios</h3>
-                <ul>
-                  <li>Recetas saudables</li>
-                  <li>Tutoriales</li>
-                  <li>Asesorias personales</li>
-                  <li>Nutricionista</li>
-                </ul>
-              </div>
-              <div>
-                <h3>Productos</h3>
-                <ul>
-                  <li>Verduras</li>
-                  <li>Frutas</li>
-                  <li>Aromaticas</li>
-                  <li>Granos</li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer-social" id="contacto">
-              <div class="social-imgs">
-                <img src="assets/facebook.svg" alt="" />
-                <img src="assets/twitter.svg" alt="" />
-                <img src="assets/linkedin.svg" alt="" />
-              </div>
-              <div class="social-txt">
-                <p>niupisoporte@email.com</p>
-                <p>(W) +57 300 000 0000</p>
-                <p>(S) +57 300 000 0000</p>
-              </div>
-            </div>
-          </footer>
-          <footer class="feet container">
-            <div class="rights">
-              <p>© 2025 Niupi Tips - Todos los derechos reservados</p>
-            </div>
-          </footer>
+  <main class="container main-container">
+    <div>
+      <img src="assets/fruits.png" alt="Fruits">
+      <h3>¡La importancia de las frutas y verduras para tu salud!</h3>
+    </div>
+    <div class="main-div">
+      <div>
+        <p>Las frutas y verduras son imprescindibles para una buena salud, inclúyelas en tu alimentación para cubrir los requerimientos nutricionales.</p>
+        <p>Estos alimentos son esenciales en la prevención de muchas y extendidas enfermedades crónicas tales como la obesidad, muy especialmente entre la población infantil. Además de ayudar a mantener el peso ideal, consumir 5 raciones entre frutas y verduras supone un refuerzo para prevenir la diabetes, el cáncer y las enfermedades cardiovasculares.</p>
+        <button>Conoce nuestra lista de recetas</button>
+      </div>
+      <div>
+        <img src="assets/family.png" alt="Family">
+      </div>
+    </div>
+  </main>
 
-        <h1>Datos obtenidos con Fetch</h1>
-        <button id="cargarDatos">Cargar Datos</button>
-        <pre id="resultado"></pre>
-    </body>
+  <section class="blog-section">
+    <h2>Descubre consejos saludables en nuestro blog</h2>
+    <div class="blog-content">
+      <p>Encuentra artículos sobre nutrición, bienestar y recetas saludables.</p>
+      <a href="blog.html" class="btn-blog">Visitar Blog</a>
+    </div>
+  </section>
+
+  <section class="datos-fetch">
+    <h1>Datos obtenidos con Fetch</h1>
+    <button id="cargarDatos">Cargar Datos</button>
+    <pre id="resultado"></pre>
+  </section>
+
+  <footer class="footer container">
+    <div class="footer-txt">
+      <div>
+        <h3>Niupi Tips</h3>
+        <p>Naturalmente saludable</p>
+      </div>
+      <div>
+        <h3>Servicios</h3>
+        <ul>
+          <li>Recetas saludables</li>
+          <li>Tutoriales</li>
+          <li>Asesorías personales</li>
+          <li>Nutricionista</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Productos</h3>
+        <ul>
+          <li>Verduras</li>
+          <li>Frutas</li>
+          <li>Aromáticas</li>
+          <li>Granos</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-social" id="contacto">
+      <div class="social-imgs">
+        <img src="assets/facebook.svg" alt="Facebook" />
+        <img src="assets/twitter.svg" alt="Twitter" />
+        <img src="assets/linkedin.svg" alt="LinkedIn" />
+      </div>
+      <div class="social-txt">
+        <p>niupisoporte@email.com</p>
+        <p>(W) +57 300 000 0000</p>
+        <p>(S) +57 300 000 0000</p>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="feet container">
+    <div class="rights">
+      <p>© 2025 Niupi Tips - Todos los derechos reservados</p>
+    </div>
+  </footer>
+</body>
 </html>
