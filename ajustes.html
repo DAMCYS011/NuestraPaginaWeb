@@ -3,60 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ajustes</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Ajustes - Niupi Tips</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/ajustes.css" />
+  <script defer src="js/ajustes.js"></script>
 </head>
 <body>
-  <header>
-    <img src="assets/logo.svg" alt="Logo de la aplicación" class="logo" />
-
-    <a href="index.html">
-      <img src="assets/flecha-atras.png" alt="Regresar" class="boton-atras" />
-    </a>
-
-    <h1>Ajustes</h1>
-
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="lista.html">Lista</a>
-      <a href="detalles.html">Detalles</a>
-      <a href="ajustes.html">Ajustes</a>
-    </nav>
+  <header class="container niupi-header">
+    <div>
+      <img src="assets/logo.svg" alt="Logo">
+      <h1>Ajustes</h1>
+    </div>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="lista.html">Listas</a></li>
+          <li><a href="detalles.html">Detalles</a></li>
+          <li><a href="ajustes.html">Ajustes</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="settings">
-      <h2>
-        <img src="assets/download-_1_.svg" alt="Icono de ajustes" class="icon-ajustes" />
-        Ajustes
-      </h2>
+  <main class="container ajustes-container">
+    <h2><img src="assets/download-_1_.svg" alt="Ajustes" class="icon-ajustes" /> Ajustes</h2>
 
-      <div class="settings-item">
-        <label>Modo Oscuro</label>
-        <div class="switch-container">
-          <input type="checkbox" id="darkModeToggle" />
-          <span class="switch-label" id="darkModeLabel">Off</span>
-        </div>
-      </div>
+    <div class="ajuste-item">
+      <label class="switch-label" for="darkModeToggle">Modo Oscuro</label>
+      <input type="checkbox" id="darkModeToggle">
+    </div>
 
-      <div class="settings-item">
-        <label>Notificaciones</label>
-        <div class="switch-container">
-          <input type="checkbox" id="notificationsToggle" />
-          <span class="switch-label" id="notificationsLabel">Off</span>
-        </div>
-      </div>
+    <div class="ajuste-item">
+      <label class="switch-label" for="notificationsToggle">Notificaciones</label>
+      <input type="checkbox" id="notificationsToggle">
+    </div>
 
-      <div class="settings-item">
-        <label>Tamaño de Texto</label>
-        <input type="range" id="textSizeSlider" min="50" max="150" value="100" />
-        <span id="textSizeValue">100%</span>
-      </div>
+    <div class="ajuste-item">
+      <label class="switch-label" for="textSizeSlider">Tamaño de Texto</label>
+      <input type="range" id="textSizeSlider" min="80" max="150" value="100">
+      <span id="textSizeValue">100%</span>
+    </div>
 
-      <button id="saveSettings">Guardar Cambios</button>
-    </section>
+    <button id="saveSettings">Guardar Cambios</button>
   </main>
 
-  <script src="ajustes.js"></script>
+  <footer class="feet container">
+    <div class="rights">
+      <p>© 2025 Niupi Tips - Todos los derechos reservados</p>
+    </div>
+  </footer>
 </body>
 </html>
