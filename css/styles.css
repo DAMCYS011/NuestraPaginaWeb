@@ -150,3 +150,28 @@ body {
     color: var(--clr-gray);
     padding: 30px 10px;
 }
+.blog-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.blog-content {
+  margin-top: 20px;
+}
+
+.btn-blog {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: var(--clr-main-light);
+  color: var(--clr-gray);
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-blog:hover {
+  background-color: var(--clr-main);
+  cursor: pointer;
+}
