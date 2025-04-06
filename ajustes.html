@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ajustes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/logo.svg" alt="Logo de la aplicación" class="logo" />
+
+    <a href="index.html">
+      <img src="assets/flecha-atras.png" alt="Regresar" class="boton-atras" />
+    </a>
+
+    <h1>Ajustes</h1>
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="lista.html">Lista</a>
+      <a href="detalles.html">Detalles</a>
+      <a href="ajustes.html">Ajustes</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="settings">
+      <h2>
+        <img src="assets/download-_1_.svg" alt="Icono de ajustes" class="icon-ajustes" />
+        Ajustes
+      </h2>
+
+      <div class="settings-item">
+        <label>Modo Oscuro</label>
+        <div class="switch-container">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="switch-label" id="darkModeLabel">Off</span>
+        </div>
+      </div>
+
+      <div class="settings-item">
+        <label>Notificaciones</label>
+        <div class="switch-container">
+          <input type="checkbox" id="notificationsToggle" />
+          <span class="switch-label" id="notificationsLabel">Off</span>
+        </div>
+      </div>
+
+      <div class="settings-item">
+        <label>Tamaño de Texto</label>
+        <input type="range" id="textSizeSlider" min="50" max="150" value="100" />
+        <span id="textSizeValue">100%</span>
+      </div>
+
+      <button id="saveSettings">Guardar Cambios</button>
+    </section>
+  </main>
+
+  <script src="ajustes.js"></script>
+</body>
+</html>
