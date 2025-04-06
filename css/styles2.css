@@ -1,140 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-:root {
-  --clr-main: #060218;
-  --clr-main-light: #810281;
-  --clr-blue: #050797;
-  --clr-gray: #e2e2e2;
-  --clr-green: #2ee908;
-  --clr-red: #961818;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--clr-gray);
-  color: var(--clr-main);
-  text-align: center;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--clr-main);
-  color: var(--clr-gray);
-  padding: 10px 20px;
-}
-
-header nav a {
-  color: var(--clr-gray);
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: 500;
-}
-
-.settings {
+.ajustes-container {
   background-color: white;
   padding: 30px;
   border-radius: 15px;
-  width: 90%;
-  max-width: 600px;
   margin: 40px auto;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
-.settings-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 25px 0;
-}
-
-.settings-item label {
-  font-weight: 600;
+.ajustes-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
   color: var(--clr-main);
 }
 
-.logo {
-  width: 60px;
-  height: auto;
-}
-
-.boton-atras {
-  width: 40px;
-  height: auto;
-  cursor: pointer;
-}
-
 .icon-ajustes {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
   margin-right: 10px;
 }
 
-#saveSettings {
-  background-color: var(--clr-main-light);
-  color: var(--clr-gray);
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 15px;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
-
-#saveSettings:hover {
-  background-color: #a03fa0;
-}
-
-/* Dark mode */
-.darkMode {
-  background-color: var(--clr-main);
-  color: var(--clr-gray);
-}
-
-.darkMode .settings {
-  background-color: #181828;
-}
-
-.darkMode .settings-item label {
-  color: var(--clr-gray);
-}
-
-.darkMode header {
-  background-color: #040213;
-}
-
-.darkMode a {
-  color: var(--clr-gray);
-}
-
-/* Estilo de switch */
-.switch-container {
+.ajuste-item {
+  margin: 20px 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
 }
 
-.switch-container input[type="checkbox"] {
+.switch-label {
+  font-weight: 600;
+  color: var(--clr-main);
+}
+
+input[type="checkbox"] {
   appearance: none;
   width: 50px;
   height: 26px;
-  background-color: var(--clr-main);
+  background-color: var(--clr-blue);
   border-radius: 26px;
   position: relative;
-  outline: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.switch-container input[type="checkbox"]::before {
+input[type="checkbox"]::before {
   content: "";
   position: absolute;
-  left: 4px;
   top: 3px;
+  left: 4px;
   width: 20px;
   height: 20px;
   background-color: white;
@@ -142,39 +56,49 @@ header nav a {
   transition: transform 0.3s ease;
 }
 
-.switch-container input[type="checkbox"]:checked {
+input[type="checkbox"]:checked {
   background-color: var(--clr-main-light);
 }
 
-.switch-container input[type="checkbox"]:checked::before {
+input[type="checkbox"]:checked::before {
   transform: translateX(24px);
 }
 
-.switch-label {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--clr-main);
-}
-
-body.darkMode .switch-label {
-  color: var(--clr-gray);
-}
-
-/* Slider */
 input[type="range"] {
   width: 150px;
   accent-color: var(--clr-main-light);
 }
 
-.darkMode input[type="range"] {
-  accent-color: #b48eff;
+#textSizeValue {
+  margin-left: 10px;
+  font-weight: 500;
 }
 
-.darkMode #saveSettings {
+#saveSettings {
   background-color: var(--clr-main-light);
   color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 30px;
+  cursor: pointer;
 }
 
-.darkMode #saveSettings:hover {
+#saveSettings:hover {
   background-color: #a352e8;
+}
+
+body.darkMode {
+  background-color: #121222;
+  color: var(--clr-gray);
+}
+
+body.darkMode .ajustes-container {
+  background-color: #1e1e2f;
+}
+
+body.darkMode .switch-label {
+  color: var(--clr-gray);
 }
