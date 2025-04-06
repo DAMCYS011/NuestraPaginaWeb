@@ -2,76 +2,56 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Niupi Tips - Ajustes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ajustes - Niupi Tips</title>
+  <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/ajustes.css" />
+  <script defer src="js/ajustes.js"></script>
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="assets/logo.svg" alt="Logo" />
-      <img src="assets/back-arrow.svg" alt="Volver" class="back-btn" onclick="window.history.back()" />
+  <header class="container niupi-header">
+    <div>
+      <img src="assets/logo.svg" alt="Logo">
+      <h1>Ajustes</h1>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Lista</a></li>
-        <li><a href="#">Detalles</a></li>
-        <li><a href="ajustes.html">Ajustes</a></li>
-      </ul>
-    </nav>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="lista.html">Listas</a></li>
+          <li><a href="detalles.html">Detalles</a></li>
+          <li><a href="ajustes.html">Ajustes</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="ajustes-container">
-    <h2><img src="assets/settings.svg" alt="Icon Ajustes" class="icon-ajustes" />AJUSTES</h2>
+  <main class="container ajustes-container">
+    <h2><img src="assets/download-_1_.svg" alt="Ajustes" class="icon-ajustes" /> Ajustes</h2>
 
     <div class="ajuste-item">
-      <span class="switch-label">Modo Oscuro</span>
-      <div class="toggle-wrapper">
-        <span>Off</span>
-        <input type="checkbox" id="darkModeToggle" />
-      </div>
+      <label class="switch-label" for="darkModeToggle">Modo Oscuro</label>
+      <input type="checkbox" id="darkModeToggle">
     </div>
 
     <div class="ajuste-item">
-      <span class="switch-label">Notificaciones</span>
-      <div class="toggle-wrapper">
-        <span>Off</span>
-        <input type="checkbox" id="notificationsToggle" />
-      </div>
+      <label class="switch-label" for="notificationsToggle">Notificaciones</label>
+      <input type="checkbox" id="notificationsToggle">
     </div>
 
     <div class="ajuste-item">
-      <span class="switch-label">Tamaño de texto</span>
-      <div class="toggle-wrapper">
-        <input type="range" id="textSizeSlider" min="50" max="150" value="100" />
-        <span id="textSizeValue">100%</span>
-      </div>
+      <label class="switch-label" for="textSizeSlider">Tamaño de Texto</label>
+      <input type="range" id="textSizeSlider" min="80" max="150" value="100">
+      <span id="textSizeValue">100%</span>
     </div>
 
     <button id="saveSettings">Guardar Cambios</button>
   </main>
 
-  <script>
-    const darkToggle = document.getElementById('darkModeToggle');
-    const textSizeSlider = document.getElementById('textSizeSlider');
-    const textSizeValue = document.getElementById('textSizeValue');
-
-    // Mostrar el tamaño en %
-    textSizeSlider.addEventListener('input', () => {
-      textSizeValue.textContent = textSizeSlider.value + '%';
-      document.documentElement.style.setProperty('--text-scale', textSizeSlider.value / 100);
-    });
-
-    // Modo oscuro funcional
-    darkToggle.addEventListener('change', () => {
-      document.body.classList.toggle('dark-mode', darkToggle.checked);
-    });
-
-    // Guardar cambios simulados
-    document.getElementById('saveSettings').addEventListener('click', () => {
-      alert('¡Cambios guardados!');
-    });
-  </script>
+  <footer class="feet container">
+    <div class="rights">
+      <p>© 2025 Niupi Tips - Todos los derechos reservados</p>
+    </div>
+  </footer>
 </body>
 </html>
