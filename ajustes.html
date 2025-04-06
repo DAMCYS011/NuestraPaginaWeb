@@ -53,13 +53,22 @@
   </main>
 
   <script>
+    const darkToggle = document.getElementById('darkModeToggle');
     const textSizeSlider = document.getElementById('textSizeSlider');
     const textSizeValue = document.getElementById('textSizeValue');
 
+    // Mostrar el tamaño en %
     textSizeSlider.addEventListener('input', () => {
       textSizeValue.textContent = textSizeSlider.value + '%';
+      document.documentElement.style.setProperty('--text-scale', textSizeSlider.value / 100);
     });
 
+    // Modo oscuro funcional
+    darkToggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode', darkToggle.checked);
+    });
+
+    // Guardar cambios simulados
     document.getElementById('saveSettings').addEventListener('click', () => {
       alert('¡Cambios guardados!');
     });
