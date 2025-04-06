@@ -5,18 +5,59 @@
   --clr-green: #4dd48b;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: var(--clr-gray);
   font-family: "Poppins", sans-serif;
+  background-color: var(--clr-gray);
   color: var(--clr-dark);
 }
 
+header {
+  background-color: var(--clr-dark);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  width: 50px;
+  height: 50px;
+}
+
+.back-btn {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
 .ajustes-container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 50px auto;
   padding: 40px;
-  background-color: var(--clr-gray);
-  border-radius: 20px;
 }
 
 .ajustes-container h2 {
@@ -52,7 +93,6 @@ body {
   gap: 10px;
 }
 
-/* SWITCHES MODERNOS */
 input[type="checkbox"] {
   appearance: none;
   width: 55px;
@@ -111,3 +151,4 @@ input[type="range"] {
 #saveSettings:hover {
   background-color: #3bcf7a;
 }
+
