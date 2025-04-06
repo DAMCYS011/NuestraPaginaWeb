@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e2f;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .settings {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .settings-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .boton-atras {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    cursor: pointer;
+  }
+  
+  .icon-ajustes {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  #saveSettings {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #saveSettings:hover {
+    background-color: #45a049;
+  }
+
+  .darkMode {
+    background-color: #1e1e2f;
+    color: white;
+  }
+  
+  .darkMode .settings {
+    background-color: #2b2b3c;
+  }
+  
+  .darkMode header {
+    background-color: #121222;
+  }
+  
+  .darkMode a {
+    color: #ccc;
+  }
+
+  .switch-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .switch-container input[type="checkbox"] {
+    appearance: none;
+    width: 50px;
+    height: 26px;
+    background-color: #1e1e2f;
+    border-radius: 26px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .switch-container input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .switch-container input[type="checkbox"]:checked {
+    background-color: #8a2be2;
+  }
+  
+  .switch-container input[type="checkbox"]:checked::before {
+    transform: translateX(24px);
+  }
+  
+  .switch-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  body.darkMode .switch-label {
+    color: #ccc;
+  }
+
+  .settings-item label {
+    color: #333;
+    font-weight: bold;
+  }
+
+  .darkMode .settings-item label {
+    color: #ddd;
+  }
+
+  input[type="range"] {
+    width: 150px;
+    accent-color: #8a2be2;
+  }
+
+  .darkMode input[type="range"] {
+    accent-color: #b48eff;
+  }
+
+  .darkMode #saveSettings {
+    background-color: #8a2be2;
+    color: white;
+  }
+
+  .darkMode #saveSettings:hover {
+    background-color: #a352e8;
+  }
