@@ -1,3 +1,5 @@
+@import url("css/styles.css");
+
 .carousel-container {
     display: flex;
     justify-content: center;
