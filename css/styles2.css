@@ -1,170 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --clr-main: #060218;
+  --clr-main-light: #810281;
+  --clr-blue: #050797;
+  --clr-gray: #e2e2e2;
+  --clr-green: #2ee908;
+  --clr-red: #961818;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    text-align: center;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1e1e2f;
-    color: white;
-    padding: 10px 20px;
-  }
-  
-  header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  .settings {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 500px;
-    margin: 20px auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .settings-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  .logo {
-    width: 50px;
-    height: auto;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-  
-  .boton-atras {
-    width: 40px;
-    height: auto;
-    position: absolute;
-    top: 15px;
-    left: 70px;
-    cursor: pointer;
-  }
-  
-  .icon-ajustes {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-right: 10px;
-  }
-  
-  #saveSettings {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  
-  #saveSettings:hover {
-    background-color: #45a049;
-  }
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--clr-gray);
+  color: var(--clr-main);
+  text-align: center;
+}
 
-  .darkMode {
-    background-color: #1e1e2f;
-    color: white;
-  }
-  
-  .darkMode .settings {
-    background-color: #2b2b3c;
-  }
-  
-  .darkMode header {
-    background-color: #121222;
-  }
-  
-  .darkMode a {
-    color: #ccc;
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-main);
+  color: var(--clr-gray);
+  padding: 10px 20px;
+}
 
-  .switch-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .switch-container input[type="checkbox"] {
-    appearance: none;
-    width: 50px;
-    height: 26px;
-    background-color: #1e1e2f;
-    border-radius: 26px;
-    position: relative;
-    outline: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .switch-container input[type="checkbox"]::before {
-    content: "";
-    position: absolute;
-    left: 4px;
-    top: 3px;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-  }
-  
-  .switch-container input[type="checkbox"]:checked {
-    background-color: #8a2be2;
-  }
-  
-  .switch-container input[type="checkbox"]:checked::before {
-    transform: translateX(24px);
-  }
-  
-  .switch-label {
-    font-size: 14px;
-    font-weight: bold;
-    color: #666;
-  }
-  
-  body.darkMode .switch-label {
-    color: #ccc;
-  }
+header nav a {
+  color: var(--clr-gray);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
 
-  .settings-item label {
-    color: #333;
-    font-weight: bold;
-  }
+.settings {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
 
-  .darkMode .settings-item label {
-    color: #ddd;
-  }
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+}
 
-  input[type="range"] {
-    width: 150px;
-    accent-color: #8a2be2;
-  }
+.settings-item label {
+  font-weight: 600;
+  color: var(--clr-main);
+}
 
-  .darkMode input[type="range"] {
-    accent-color: #b48eff;
-  }
+.logo {
+  width: 60px;
+  height: auto;
+}
 
-  .darkMode #saveSettings {
-    background-color: #8a2be2;
-    color: white;
-  }
+.boton-atras {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
 
-  .darkMode #saveSettings:hover {
-    background-color: #a352e8;
-  }
+.icon-ajustes {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#saveSettings {
+  background-color: var(--clr-main-light);
+  color: var(--clr-gray);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+#saveSettings:hover {
+  background-color: #a03fa0;
+}
+
+/* Dark mode */
+.darkMode {
+  background-color: var(--clr-main);
+  color: var(--clr-gray);
+}
+
+.darkMode .settings {
+  background-color: #181828;
+}
+
+.darkMode .settings-item label {
+  color: var(--clr-gray);
+}
+
+.darkMode header {
+  background-color: #040213;
+}
+
+.darkMode a {
+  color: var(--clr-gray);
+}
+
+/* Estilo de switch */
+.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch-container input[type="checkbox"] {
+  appearance: none;
+  width: 50px;
+  height: 26px;
+  background-color: var(--clr-main);
+  border-radius: 26px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.switch-container input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.switch-container input[type="checkbox"]:checked {
+  background-color: var(--clr-main-light);
+}
+
+.switch-container input[type="checkbox"]:checked::before {
+  transform: translateX(24px);
+}
+
+.switch-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--clr-main);
+}
+
+body.darkMode .switch-label {
+  color: var(--clr-gray);
+}
+
+/* Slider */
+input[type="range"] {
+  width: 150px;
+  accent-color: var(--clr-main-light);
+}
+
+.darkMode input[type="range"] {
+  accent-color: #b48eff;
+}
+
+.darkMode #saveSettings {
+  background-color: var(--clr-main-light);
+  color: white;
+}
+
+.darkMode #saveSettings:hover {
+  background-color: #a352e8;
+}
