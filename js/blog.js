@@ -1,7 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => 
     const carouselContainer = document.querySelector(".carousel-container");
     let index = 0;
-
     function slideCarousel() {
         index++;
         if (index >= carouselContainer.children.length) {
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         carouselContainer.style.transform = `translateX(-${index * 100}%)`;
     }
-
     setInterval(slideCarousel, 3000);
     const buttons = document.querySelectorAll(".btn");
 
