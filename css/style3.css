@@ -2,26 +2,29 @@
 @import url("styles2.css");
 
 .carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
+
+  height: 290px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
 }
 
 .carousel-container {
+
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  left: 0;
   display: flex;
   gap: 20px;
-  justify-content: center;
   align-items: center;
-  overflow: hidden;
-  width: 100%;
-  flex-wrap: wrap;
+  justify-content: left;
   padding: 20px;
 }
 
 .carousel-container img {
   width: 250px; /* tamaño más pequeño */
-  height: auto;
+  height: 250px;
   border-radius: 15px;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
