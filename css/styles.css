@@ -111,6 +111,10 @@ button:hover {
     width: 300px;
 }
 
+.blog-spam {
+    margin-top: 20px;
+}
+
 iframe {
     margin: 20px;
 }
