@@ -1,22 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const boton = document.getElementById("cargarDatos");
-    const resultado = document.getElementById("resultado");
+let loaderOne = document.getElementById("loaderOne");
+let contentOne = document.getElementById("contentOne");
+let loaderTwo = document.getElementById("loaderTwo");
+let contentTwo = document.getElementById("contentTwo");
 
-    function obtenerDatos() {
-        fetch("https://jsonplaceholder.typicode.com/posts/1")
-        .then (response => {
-            if (!response.ok) {
-                throw new Error(`Error HTTP: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then (data => {
-            resultado.textContent = JSON.stringify(data, null, 2);
-        })
-        .catch (error => {
-            console.error ("Error al obtener los datos:", error);
-            resultado.textContent = "Hubo un error al obtener los datos.";
-        });
-    }
-    boton.addEventListener("click", obtenerDatos);
-});
+loaderOne.addEventListener("click", () => {
+    contentOne.classList.remove("disabled");
+    loaderOne.classList.add("disabled");
+})
+
+loaderTwo.addEventListener("click", () => {
+    contentTwo.classList.remove("disabled");
+    loaderTwo.classList.add("disabled");
+})

@@ -1,12 +1,11 @@
 @import url("styles.css");
-@import url("styles.css");
+@import url("styles2.css");
 
 .carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  background-color: #fff;
 }
 
 .carousel-container {
@@ -17,6 +16,7 @@
   overflow: hidden;
   width: 100%;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .carousel-container img {
@@ -56,3 +56,13 @@ button {
   font-size: 16px;
   border-radius: 10px;
 }
+
+.main-blog img {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.fade-in {
+  margin: 30px;
+}
+

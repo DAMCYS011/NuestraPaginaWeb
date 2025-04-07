@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Niupi Tips</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="CSS/style3.css">
+  <script defer src="js/ajustes.js"></script>
   <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -17,46 +17,52 @@
     <div>
       <nav>
         <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Listas</a></li>
-          <li><a href="">Detalles</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="ajustes.html">Ajustes</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
-  <main class="container main-container">
+    <main class="container main-container">
     <div>
       <img src="assets/fruits.png" alt="Fruits">
       <h3>¡La importancia de las frutas y verduras para tu salud!</h3>
+      <button id="loaderOne" class="">Cargar contenido</button>
     </div>
-    <div class="main-div">
-      <div>
-        <p>Las frutas y verduras son imprescindibles para una buena salud, inclúyelas en tu alimentación para cubrir los requerimientos nutricionales.</p>
-        <p>Estos alimentos son esenciales en la prevención de muchas y extendidas enfermedades crónicas tales como la obesidad, muy especialmente entre la población infantil. Además de ayudar a mantener el peso ideal, consumir 5 raciones entre frutas y verduras supone un refuerzo para prevenir la diabetes, el cáncer y las enfermedades cardiovasculares.</p>
-        <button>Conoce nuestra lista de recetas</button>
+    <div id="contentOne" class="disabled">
+      <div class="main-div">
+        <div>
+          <p>Las frutas y verduras son imprescindibles para una buena salud, inclúyelas en tu alimentación para cubrir los requerimientos nutricionales.</p>
+          <p>Estos alimentos son esenciales en la prevención de muchas y extendidas enfermedades crónicas tales como la obesidad, muy especialmente entre la población infantil. Además de ayudar a mantener el peso ideal, consumir 5 raciones entre frutas y verduras supone un refuerzo para prevenir la diabetes, el cáncer y las enfermedades cardiovasculares.</p>
+        </div>
+        <div>
+          <img src="assets/family.png" alt="Family">
+        </div>
+      </div>
+      <div class="main-div">
+        <div>
+          <p>Incluir rutas y verduras en nuestra dieta es esencial para mantener una alimentación equilibrada y saludable. Según la Organización Mundial de la Salud (OMS), llevar una dieta rica en frutas y verduras ayuda a prevenir la malnutrición y diferentes enfermedades no transmisibles.</p>
+          <p>Además, es importante variar las verduras que consumes para asegurar una ingesta equilibrada de nutrientes y evitar la monotonía. Experimenta con diferentes preparaciones y recetas para disfrutar de las verduras de manera atractiva y sabrosa.</p>
+          <p class="blog-spam">Encuentra artículos sobre nutrición, bienestar y recetas saludables en nuestro blog.</p>
+          <button>Visitar Blog</button>
+        </div>
+        <div>
+          <img src="assets/secondfamily.png" alt="Family">
+        </div>
       </div>
       <div>
-        <img src="assets/family.png" alt="Family">
+        <h3>¿Deseas una asesoria nutricional con expertos?</h3>
+        <h4>Comienza ahora mismo</h4>
+        <button id="loaderTwo" class="">Cargar videos</button>
       </div>
+    </div>
+    <div id="contentTwo" class="disabled">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZRItmC9ODXE?si=TubMaVrxjRWmDCuD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/bHsokNUYR7c?si=nOptaVCLIyLRtQ8b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qbXoxyIcxug?si=jiF2K7_Oj24m-_Lf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </main>
-
-  <section class="blog-section">
-    <h2>Descubre consejos saludables en nuestro blog</h2>
-    <div class="blog-content">
-      <p>Encuentra artículos sobre nutrición, bienestar y recetas saludables.</p>
-      <a href="blog.html" class="btn-blog">Visitar Blog</a>
-    </div>
-  </section>
-
-  <section class="datos-fetch">
-    <h1>Datos obtenidos con Fetch</h1>
-    <button id="cargarDatos">Cargar Datos</button>
-    <pre id="resultado"></pre>
-  </section>
-
   <footer class="footer container">
     <div class="footer-txt">
       <div>

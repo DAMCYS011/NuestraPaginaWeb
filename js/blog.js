@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => 
+document.addEventListener("DOMContentLoaded", () => {
     const carouselContainer = document.querySelector(".carousel-container");
     let index = 0;
     function slideCarousel() {
